@@ -10,8 +10,14 @@ function Calculate() {
   console.log(operation.toFixed(2));
 
   const theBestOption = document.getElementById('bestOption');
-  const bestOption = (operation.toFixed(2));
+  const bestOption = ( 'R$' + (operation.toFixed(2)));
   theBestOption.innerHTML = bestOption;
+
+  const theBestOptionSpan = document.getElementById('bestOptionSpan');
+  const bestOptionSpan = ('best is:');
+  theBestOptionSpan.innerHTML = bestOptionSpan;
+
+  
 
   if (operation < 0.7) {
     img.src = 'etanol.png'
@@ -19,6 +25,6 @@ function Calculate() {
   } else
     img.src = 'gasolina.png'
   console.log('Petrol')
-
+ 
 
 }

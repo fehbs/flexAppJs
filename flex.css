@@ -1,5 +1,6 @@
 body {
   background-color: #d8d8e0e0;
+  font-family: sans-serif;
 }
 
 header {
@@ -47,10 +48,29 @@ button {
   cursor: pointer;
 }
 
- h2 {
-  background-color: aquamarine;
-  width: 50%;
-  height: 8vh;
-  border-radius: 8px;
-
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
+
+ .bestOptions {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  background: aqua ;
+  height: auto;
+  width: 50%;
+ }
+
+ .bestOptions h2 {
+  margin: 0;
+ }
+
+
+
+
