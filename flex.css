@@ -1,0 +1,56 @@
+body {
+  background-color: #d8d8e0e0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgStatus img{
+  width: 100%;
+  border-radius: 8px;
+}
+
+form label {
+  margin-top: 4px;
+}
+
+form {
+  height: 92vh;
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgb(66, 58, 58);
+}
+
+form input {
+  margin: 5px;
+  width: 50%;
+  font-size: 1.4em;
+  line-height: calc(1.4);
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+
+button {
+  margin: 7px ;
+  width: 51%;
+  font-size: 1.5em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ h2 {
+  background-color: aquamarine;
+  width: 50%;
+  height: 8vh;
+  border-radius: 8px;
+
+}
