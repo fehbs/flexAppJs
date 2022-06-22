@@ -40,6 +40,13 @@ form input {
   text-align: center;
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
 button {
   margin: 7px ;
   width: 51%;
