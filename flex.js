@@ -28,3 +28,7 @@ function Calculate() {
  
 
 }
+
+function Remove() {
+  document.getElementById('form').reset();
+}

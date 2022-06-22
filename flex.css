@@ -20,7 +20,7 @@ form label {
 }
 
 form {
-  height: 92vh;
+  height: 96vh;
   width: 50%;
   display: flex;
   flex-flow: column wrap;
@@ -48,7 +48,7 @@ form input {
 }
 
 button {
-  margin: 7px ;
+  margin: 9px ;
   width: 51%;
   font-size: 1.5em;
   border-radius: 8px;
