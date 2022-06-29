@@ -17,15 +17,12 @@ function Calculate() {
   const bestOptionSpan = ('best is:');
   theBestOptionSpan.innerHTML = bestOptionSpan;
 
-  
-
   if (operation < 0.7) {
     img.src = 'etanol.png'
     console.log('Ethanol')
   } else
     img.src = 'gasolina.png'
   console.log('Petrol')
- 
 
 }
 
