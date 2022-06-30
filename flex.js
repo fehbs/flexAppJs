@@ -16,13 +16,11 @@ function Calculate() {
 
   if (operation < 0.7) {
     img.src = 'etanol.png'
-    console.log('Ethanol');
     bestOption.innerHTML = '$ ' + (operation.toFixed(2));
     bestOptionSpan.innerHTML = (' Beter is Ethanol');
 
   } else {
     img.src = 'gasolina.png'
-    console.log('Petrol');
     bestOption.innerHTML = '$ ' + (operation.toFixed(2));
     bestOptionSpan.innerHTML = (' Beter is Petrol');
   }
