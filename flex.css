@@ -16,7 +16,6 @@
   --red-900: #FF3F4B;
 }
 
-
 body {
   background-color: var(--dark-900);
   font-family: sans-serif;
@@ -45,21 +44,20 @@ label {
   color: var(--white);
 }
 
-
-.imgStatus img{
+.imgStatus img {
   width: 100%;
   border-radius: 8px;
   margin-top: 20px;
 }
 
 form label {
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 form {
-  margin: 13px;
-  height: 96vh;
-  width: 50%;
+  margin: 18px;
+  height: 94vh;
+  width: 700px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -86,8 +84,8 @@ form input {
 }
 
 button {
-  margin: 18px ;
-  width: 51%;
+  margin: 18px;
+  width: 100%;
   height: 40px;
   font-size: 1.2em;
   border-radius: 8px;
@@ -115,29 +113,42 @@ section {
   justify-content: center;
 }
 
- .bestOptions {
+.bestOptions {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   border-radius: 8px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 8px;
   width: 50%;
   height: auto;
-  background-color: #FFF; 
- }
+  background-color: #FFF;
+}
 
- .bestOptions h4 {
+.bestOptions h4 {
   margin-bottom: 0;
   color: var(--dark-900);
- }
- 
- .bestOptions span {
-  font-size: 1em;
+  font-size: 1.2em;
+}
+
+.bestOptions span {
+  font-size: 1.2em;
   color: var(--dark-900);
   font-weight: 550;
- }
+}
 
+@media screen and (max-width:700px) {
 
+  .buttons,
+  button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+  }
 
+}
