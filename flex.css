@@ -48,7 +48,28 @@ label {
   width: 100%;
   border-radius: 8px;
   margin-top: 20px;
+  cursor: pointer;
 }
+
+.imgStatus:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake { 
+  0%{transform: translate(1px, 1px) rotate(0deg);}
+  10%{transform: translate(-1px, -2px) rotate(-1deg);}
+  20%{transform: translate(-2px, 0px) rotate(1deg);}
+  30%{transform: translate(2px, 2px) rotate(0deg);}
+  40%{transform: translate(1px, -1px) rotate(1deg);}
+  50%{transform: translate(-1px, 2px) rotate(-1deg);}
+  60%{transform: translate(-2px, 1px) rotate(0deg);}
+  70%{transform: translate(2px, 1px) rotate(-1deg);}
+  80%{transform: translate(-1px, -1px) rotate(1deg);}
+  90%{transform: translate(1px, 2px) rotate(0deg);}
+  100%{transform: translate(1px, -2px) rotate(-1deg);}
+}
+
 
 form label {
   margin-top: 10px;
@@ -124,26 +145,32 @@ section {
   width: 50%;
   height: auto;
   background-color: #FFF;
+  color: var(--dark-900);
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.bestOptions:hover {
+  background-color: #FF3F4B;
+  color: var(--white);
+  font-weight: 100;
 }
 
 .bestOptions h4 {
   margin-bottom: 0;
-  color: var(--dark-900);
   font-size: 1.2em;
 }
 
 .bestOptions span {
-  font-size: 1.2em;
-  color: var(--dark-900);
-  font-weight: 550;
+  font-size: 1.4em;
 }
 
 @media screen and (max-width:700px) {
 
   .buttons,
   button {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 3px;
     width: 68%;
     display: flex;
     align-items: center;
@@ -151,4 +178,11 @@ section {
     flex-flow: column wrap;
   }
 
+  .bestOptions span {
+    font-size: 1em;
+  }
+
+  .bestOptions h4 {
+    font-size: 1.1em;
+  }
 }
