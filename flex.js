@@ -9,21 +9,22 @@ function Calculate() {
   const operation = parseFloat(ethanol) / parseFloat(petrol);
   console.log(operation.toFixed(2));
 
-  const theBestOption = document.getElementById('bestOption');
-  const bestOption = ( 'R$' + (operation.toFixed(2)));
-  theBestOption.innerHTML = bestOption;
+  const bestOption = document.getElementById('bestOption');
 
-  const theBestOptionSpan = document.getElementById('bestOptionSpan');
-  const bestOptionSpan = ('best is:');
-  theBestOptionSpan.innerHTML = bestOptionSpan;
+  const bestOptionSpan = document.getElementById('bestOptionSpan');
+ 
 
   if (operation < 0.7) {
     img.src = 'etanol.png'
-    console.log('Ethanol')
-  } else
+    console.log('Ethanol');
+    bestOption.innerHTML = '$ ' + (operation.toFixed(2));
+    bestOptionSpan.innerHTML = (' Beter is Ethanol');
+  } else {
     img.src = 'gasolina.png'
-  console.log('Petrol')
-
+    console.log('Petrol');
+    bestOption.innerHTML = '$ ' + (operation.toFixed(2));
+    bestOptionSpan.innerHTML = (' Beter is Petrol');
+  }
 }
 
 function Remove() {

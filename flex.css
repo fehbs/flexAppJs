@@ -32,12 +32,12 @@ header {
 h1 {
   color: var(--red-900);
   font-size: 3em;
-  margin-top: -50px;
+  margin-top: -1px;
 }
 
 h5 {
   font-size: 1.3em;
-  margin: 0;
+  margin-top: 20px;
 }
 
 h5,
@@ -53,11 +53,11 @@ label {
 }
 
 form label {
-  margin-top: 4px;
+  margin-top: 10px; 
 }
 
 form {
-  margin: 10px;
+  margin: 13px;
   height: 96vh;
   width: 50%;
   display: flex;
@@ -86,22 +86,25 @@ form input {
 }
 
 button {
-  margin: 9px ;
+  margin: 18px ;
   width: 51%;
   height: 40px;
   font-size: 1.2em;
   border-radius: 8px;
   border: 1px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 540;
 }
 
 button:hover {
   background-color: #FF3F4B;
+  color: #ecdddd;
+  font-weight: 300;
 }
 
 button:active {
   background-color: #ecdddd;
+  color: #000;
 }
 
 section {
@@ -118,15 +121,23 @@ section {
   flex-direction: column;
   justify-content: center;
   border-radius: 8px;
-  height: auto;
+  text-align: center;
+  margin-top: 10px;
   width: 50%;
-  background-color: var(--white);
+  height: auto;
+  background-color: #FFF; 
  }
 
- .bestOptions h2 {
-  margin: 0;
+ .bestOptions h4 {
+  margin-bottom: 0;
+  color: var(--dark-900);
  }
-
+ 
+ .bestOptions span {
+  font-size: 1em;
+  color: var(--dark-900);
+  font-weight: 550;
+ }
 
 
 
